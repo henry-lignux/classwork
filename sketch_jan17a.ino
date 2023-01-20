@@ -9,8 +9,8 @@ double multiplierC = 1.047; //claw multiplier
 double angle = 180;
 
 void setup() {
-  servo1.attach(9);
-  servo2.attach(8);
+  servo1.attach(8);
+  servo2.attach(9);
   servo3.attach(10);
 }
 
@@ -28,5 +28,5 @@ void loop() {
     servo3.write(pos * multiplierC);
     delay(10);
   }
-  delay(500);
+  delay(1000);
 }
